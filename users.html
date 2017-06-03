@@ -2,8 +2,8 @@
 <html lang="en">
 
 <!--============================================================================-->
-<!--  Created: INSERTDATE by Troy Center, troycenter1@gmail.com.                -->
-<!--  INSERT DESCRIPTION                                                        -->
+<!--  Created: June 3 2017 by Troy Center, troycenter1@gmail.com.               -->
+<!--  Basic Form with on screen table to capture the input.                     -->
 <!--  Google Font in use: https://fonts.google.com/?selection.family=Open+Sans  -->
 <!--============================================================================-->
 
@@ -13,13 +13,44 @@
         <title>Intro to JQuery</title>
         <link rel="stylesheet" type="text/css" href="users.css">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript"></script>
+        <script type="text/javascript" src="js/users.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
     <body>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email Address</th>
+                <th>Contact #</th>
+            </tr>
+            <tr>
+                <td>Troy</td>
+                <td>Center</td>
+                <td>troy@troycenter.com</td>
+                <td>206-555-5555</td>
+            </tr>
+        </table>
+        <Section id="adduserform"> 
+            <h2>Add User</h2>
+            <div id="formlabels">
+                <p>First name</p>
+                <p>Last name</p>
+                <p>Email</p>
+                <p>Contact No.</p>
+            </div>
+            <div id="forminputs">
+                <form id="form1" action="process.php" method="POST">
+                    <input placeholder="First Name" size='30' class="forminput" type="text" name="firstname">
+                    <input placeholder="Last Name" size='30' class="forminput" type="text" name="lastname">
+                    <input placeholder="Email Address" size='30' class="forminput" type="email" name="email">
+                    <input placeholder="Phone #" size='20' class="forminput" type="tel">
+                </form>
+            </div>
+            <input id="formsubmitbutton" type="submit" value="Add User">
+        </Section>
+    <footer><p>by Troy Center, Coding Dojo student 2017</p></footer>
     </body>
-    <footer>
-    </footer>
 </html>
 
 

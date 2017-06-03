@@ -1,6 +1,6 @@
 /*******************************************************************/
-/* Created: INSERTDATE by Troy Center, troycenter1@gmail.com.      */
-/* INSERTDESCRIPTION                                               */
+/* Created: June 3 2017  by Troy Center, troycenter1@gmail.com.    */
+/* CSS for users.html                                              */
 /*******************************************************************/
 
 /***************************************************/
@@ -12,3 +12,64 @@
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
 }
+footer {
+    margin-top: 100px;
+    text-align: center; 
+    font-size: 8px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/***************************************************/
+/*      Table at top of page                       */
+/***************************************************/
+
+table {
+    border: 1px solid black;
+    width: 800px;
+    text-align: left;
+    margin: 30px;
+}
+tr {
+    border-top: 2px groove grey;
+}
+h2 {
+    margin: 20px;
+}
+
+/***************************************************/
+/*      User Form                                  */
+/***************************************************/
+
+#adduserform {
+    background-image: -webkit-linear-gradient(grey, white);
+    background-image: -moz-linear-gradient(grey, white);
+    background-image: -o-linear-gradient(grey, white);
+    background-image: linear-gradient(grey, white);
+    width: 600px;
+    margin: 50px;
+}
+
+#adduserform h2 {
+    border-bottom: 1px groove grey;
+}
+
+#formlabels {
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
+}
+
+#forminputs {
+    display: inline-block;
+    width: 200px;
+}
+
+#formsubmitbutton {
+    position: relative;
+    top: 50px;
+    height: 30px; 
+    Width: 100px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px grey;
+}
+
