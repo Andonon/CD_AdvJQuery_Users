@@ -17,19 +17,23 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
     <body>
-        <table>
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email Address</th>
-                <th>Contact #</th>
-            </tr>
-            <tr>
-                <td>Troy</td>
-                <td>Center</td>
-                <td>troy@troycenter.com</td>
-                <td>206-555-5555</td>
-            </tr>
+        <table id="userlist">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email Address</th>
+                    <th>Contact #</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--<tr>
+                    <td>Troy</td>
+                    <td>Center</td>
+                    <td>troy@troycenter.com</td>
+                    <td>206-555-5555</td>
+                </tr>-->
+            </tbody>
         </table>
         <Section id="adduserform"> 
             <h2>Add User</h2>
@@ -41,11 +45,11 @@
             </div>
             <div id="forminputs">
                 <form id="form1" action="process.php" method="POST">
-                    <input placeholder="First Name" size='30' class="forminput" type="text" name="firstname">
-                    <input placeholder="Last Name" size='30' class="forminput" type="text" name="lastname">
-                    <input placeholder="Email Address" size='30' class="forminput" type="email" name="email">
-                    <input placeholder="Phone #" size='20' class="forminput" type="tel">
-                </form>
+                    <input id="firstname" placeholder="First Name" size='30' class="forminput" type="text" name="firstname" onkeyup="formChanged()" onchange="formChanged()">
+                    <input id="lastname" placeholder="Last Name" size='30' class="forminput" type="text" name="lastname" onkeyup="formChanged()" onchange="formChanged()">
+                    <input id="email" placeholder="Email Address" size='30' class="forminput" type="email" name="email" onkeyup="formChanged()" onchange="formChanged()">
+                    <input id="phone" placeholder="Phone #" size='30' class="forminput" type="tel" name="phone" onkeyup="formChanged()" onchange="formChanged()">
+                </form >
             </div>
             <input id="formsubmitbutton" type="submit" value="Add User">
         </Section>
